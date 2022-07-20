@@ -1,0 +1,23 @@
+#base salary
+
+#plus 1% of the base salary for every touchdown pass thrown
+
+# subtract $5,500 for each fumble
+
+#12% of contract value is donated to charity
+
+basesalary = input("Input the base salary: ")
+touchdown = input("How many touchdown? ")
+fumbles = input("How many fumbles? ")
+
+#convert
+basesalary = float(basesalary)
+touchdown = float(touchdown)
+fumbles = float(fumbles)
+
+total = basesalary + touchdown * basesalary * 0.01 - fumbles * 5500
+total = total
+charity = total * 0.12
+quartbackkeeps = total * 0.88
+print(total)
+print(f"The total salary is ${total} \nThe quarterback will keep ${quartbackkeeps} \nand donate ${charity}")
